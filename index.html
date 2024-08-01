@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sister's Birthday</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #f9c6c9;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        #intro {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #intro-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        #gallery, #messages {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #gallery h2, #messages h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            max-width: 300px;
+            max-height: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .message-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .message video {
+            max-width: 300px;
+            max-height: 200px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f9c6c9;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, DiDi!</h1>
+    </header>
+    <section id="intro">
+        <video autoplay muted loop id="intro-video">
+            <source src="main.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h2>Welcome to the Celebration</h2>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+            
+            <img src="jpeg-optimizer_image2.jpg">
+            <img src="jpeg-optimizer_image3.jpg">
+            <img src="jpeg-optimizer_image4.jpg">
+            <img src="jpeg-optimizer_image5.jpg">
+            <img src="jpeg-optimizer_image6.jpg">
+            <img src="jpeg-optimizer_image7.jpg">
+            <img src="jpeg-optimizer_image8.jpg">
+            <img src="jpeg-optimizer_image9.jpg">
+            <img src="jpeg-optimizer_image10.jpg">
+            <img src="jpeg-optimizer_image11.jpg">
+            <img src="jpeg-optimizer_image12.jpg">
+            <img src="jpeg-optimizer_image13.jpg">
+            <img src="jpeg-optimizer_image14.jpg">
+            <img src="jpeg-optimizer_image15.jpg">
+            <img src="jpeg-optimizer_image16.jpg">
+            <img src="jpeg-optimizer_image17.jpg">
+            <img src="jpeg-optimizer_image18.jpg">
+            <img src="jpeg-optimizer_image19.jpg">
+            <img src="jpeg-optimizer_image20.jpg">
+                      
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+    <section id="messages">
+        <h2>Videos</h2>
+        <div class="message-container">
+            <div class="message">
+                <video controls>
+                    <source src="main.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="message">
+                <video controls>
+                    <source src="vid2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="message">
+                <video controls>
+                    <source src="vid1.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <!-- Add more messages as needed -->
+        </div>
+    </section>
+    <footer>
+        <p>Made with ❤️ for u DiDi</p>
+    </footer>
+    <script>
+        // JavaScript functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Birthday website loaded');
+            // Example: add a simple alert for the birthday
+            setTimeout(() => {
+                alert('Happy Birthday, Siddhi DiDi!');
+            }, 2500); // Show alert after 5 seconds
+        });
+    </script>
+</body>
+</html>
+
